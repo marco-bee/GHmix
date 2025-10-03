@@ -44,7 +44,7 @@ dgh <- function(x, a, b, g, h, logar)
     #   print(sort(f))
     return(as.double(f))
   }
-  if (h==0 && g!=0)
+  if (h==0 && g>0)
     g <- pmax(g,0)
   if (h==0 && g>0)
   {

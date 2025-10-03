@@ -13,10 +13,6 @@
 MLEBoot <- function(x,dati,nome)
 {
   library(GHmix)
-  # source('G:\\Il mio Drive\\OldStuff\\Paperi\\g_vs_gh\\programs\\ld.R')
-  # source('G:\\Il mio Drive\\OldStuff\\Paperi\\IndInfgh\\programs\\qEst.R')
-  # source('G:\\Il mio Drive\\OldStuff\\Paperi\\IndInfgh\\covariates\\programs\\llghcov.R')
-  # source('G:\\Il mio Drive\\OldStuff\\Paperi\\g_vs_gh\\programs\\dg.R')
   samSiz <- length(dati)
   logar <- 1
   indici = sample(samSiz, samSiz, replace = TRUE)
