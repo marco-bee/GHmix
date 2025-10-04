@@ -4,9 +4,13 @@
 \alias{dg}
 \title{Density function of the g distribution}
 \usage{
-dg(x0, g)
+dg(x0, a, b, g)
 }
 \arguments{
+\item{a}{real: location parameter.}
+
+\item{b}{positive real: scale parameter.}
+
 \item{g}{real: shape (skewness) parameter.}
 
 \item{x}{real: numerical vector: values where the density has to be evaluated.}
@@ -18,5 +22,5 @@ Value of the density function of the g distribution.
 dg evaluates the density of the g distribution
 }
 \examples{
-yd <- dg(1,0.5)
+yd <- dg(1,0,1,0.5)
 }

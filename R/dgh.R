@@ -38,24 +38,24 @@ dgh <- function(x, a, b, g, h, logar)
   }
   if (g == 0 && h == 0)
   {
-    f <- a + b*dnorm(x,0,1)
+    f <- dnorm(x,a,b)
     if (logar == 1)
       f <- log(f)
     #   print(sort(f))
     return(as.double(f))
   }
-  if (h==0 && g>0)
-    g <- pmax(g,0)
-  if (h==0 && g>0)
+  if (h==0 && g!=0)
+  #   g <- pmax(g,0)
+  # if (h==0 && g>0)
   {
-    f <- a + b*dg(x,g)
+    f <- dg(x,a,b,g)
     f[f==0] <- 1e-320 # 1e-320
     if (logar == 1)
       f <- log(f)
     return(as.double(f))
   }
-  if (h==0 && g<0)
-  {
-    stop('g cannot be negative when h=0')
-  }
+  # if (h==0 && g<0)
+  # {
+  #   stop('g cannot be negative when h=0')
+  # }
 }
