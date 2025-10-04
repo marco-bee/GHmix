@@ -12,12 +12,11 @@
 
 dg <- function(x0,a,b,g)
 {
-  gammap <- 1/g
   x0 <- (x0-a)/b
   if (g>0)
   {
+    gammap <- 1/g
     x <- x0+gammap
-    print(range(x))
     mu <- log(1/g)
     sigma <- g
     f <- dlnorm(x,mu,sigma)/b
@@ -25,8 +24,8 @@ dg <- function(x0,a,b,g)
   }
   if (g<0)
   {
+    gammap <- -1/g
     x <- rev(-x0+gammap)
-    print(range(x))
     mu <- log(1/-g)
     sigma <- -g
     f <- rev(dlnorm(x,mu,sigma))/b
