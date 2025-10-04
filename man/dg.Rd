@@ -4,18 +4,18 @@
 \alias{dg}
 \title{Density function of the g distribution}
 \usage{
-dg(x, g)
+dg(x0, g)
 }
 \arguments{
-\item{x}{real: numerical vector: values where the density has to be evaluated.}
+\item{g}{real: shape (skewness) parameter.}
 
-\item{g}{positive real: shape (skewness) parameter.}
+\item{x}{real: numerical vector: values where the density has to be evaluated.}
 }
 \value{
-value of the density function of the g distribution.
+Value of the density function of the g distribution.
 }
 \description{
-This function evaluates the density of the g distribution
+dg evaluates the density of the g distribution
 }
 \examples{
 yd <- dg(1,0.5)
