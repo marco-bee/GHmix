@@ -1,7 +1,7 @@
 #' Quantile function of the a g-and-h distribution
 #'
 #' This function computes the quantile function of a g-and-h distribution.
-#' @param x real, 0<=x<=1: quantile levels.
+#' @param p real, 0<=x<=1: quantile levels.
 #' @param a real: location parameter.
 #' @param b positive real: scale parameter.
 #' @param g real: first shape (skewness) parameter.
