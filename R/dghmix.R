@@ -17,6 +17,6 @@
 
 dghmix <- function(x,p,a1,b1,g1,h1,a2,b2,g2,h2)
 {
-  y <- p*GHmix::dgh(x,a1,b1,g1,h1,0)+(1-p)*GHmix::dgh(x,a2,b2,g2,h2,0)
+  y <- p*dgh(x,a1,b1,g1,h1,0)+(1-p)*dgh(x,a2,b2,g2,h2,0)
   y
 }
