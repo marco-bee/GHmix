@@ -2,7 +2,7 @@
 % Please edit documentation in R/dgh.R
 \name{dgh}
 \alias{dgh}
-\title{Density function of the a g-and-h distribution}
+\title{Density function of the g-and-h distribution}
 \usage{
 dgh(x, a, b, g, h, logar)
 }

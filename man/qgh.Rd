@@ -7,6 +7,8 @@
 qgh(p, a, b, g, h)
 }
 \arguments{
+\item{p}{real, 0<=x<=1: quantile levels.}
+
 \item{a}{real: location parameter.}
 
 \item{b}{positive real: scale parameter.}
@@ -14,8 +16,6 @@ qgh(p, a, b, g, h)
 \item{g}{real: first shape (skewness) parameter.}
 
 \item{h}{positive real: second (heavy tailedness) shape parameter.}
-
-\item{x}{real, 0<=x<=1: quantile levels.}
 }
 \value{
 value of the quantile function of the g-and-h distribution.
