@@ -15,6 +15,8 @@
 
 dgh <- function(x, a, b, g, h, logar)
 {
+  if (b<0 || h<0)
+    stop('b and h must be non-negative')
   if (h>0 && g!=0)
   {
     Ff <- unlist(pgh(x,a,b,g,h)[1,])
